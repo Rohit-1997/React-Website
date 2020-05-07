@@ -1,0 +1,122 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A78C2;
+    text-align: center;
+    color: #A3C9E7;
+  }
+
+  .footer-link.hover{
+    color: white;
+}
+
+.footer-link{
+    color: white;
+}
+
+.card-custom-style{
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 5px;
+}
+
+.card-title{
+    color: #696969;
+}
+
+.cards-row{
+        text-align:center;
+        margin:0 auto;
+}
+.cards-row .card-custom-style{
+    display:inline-block;
+    vertical-align: middle;
+    float: none;
+    height: 400px;
+    width: 380px;
+ }
+
+ .card-image-row{
+     height: 240px;
+     text-align: center;
+     flex-direction: column;
+ }
+
+ .card-title{
+     background-color: whitesmoke;
+     font-family: sans-serif;
+     text-align: center;
+     color: black;
+     margin-top: 3px;
+ }
+
+.card-first-row{
+    height: 20px;
+}
+
+ .card-third-row{
+    height: 110px;
+ }
+
+ .custom-card-image{
+     height: 240px;
+     width: 220px;
+     padding: 5px;
+     margin: 0 auto;
+ }
+
+#main-container{
+    background-color: lavender;
+    padding: 50px;
+    float: left;
+    margin: 0 auto;
+}
+
+.custom-navbar{
+    background-color: #385586;
+    color: #FFFFFF;
+    padding: 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+}
+
+.custom-navbar .nav-item{
+    color: #FFFFFF;
+}
+
+.custom-navbar a {
+    color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
