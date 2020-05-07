@@ -1,9 +1,8 @@
 import * as React from 'react';
-import * as ReactDOM from "react-dom";
 import CardList from "./card-list"
 import {Product} from "../Modules/Product"
 import * as axios from 'axios';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CardDetails from './card-details';
 
 
@@ -31,17 +30,23 @@ function App() {
         }
     )
     }
+
+
     React.useEffect(() => {
-        if(products.length == 0){
+        if(products.length === 0){
             getProducts();
         }
     })
 
     return (
-                <div className="container-fluid d-flex justify-content-center">
-                <Route path="/" exact render = {(routeProps) => (<CardList {...routeProps} data={products} />)} />
-                {/* <CardList data={products}/> */}
-                </div>
+        <div className="container-fluid d-flex justify-content-center main-contianer">
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/" exact render = {(routeProps) => (<CardList {...routeProps} data={products} />)} />
+                    <Route path="/:id" component = {CardDetails} />
+                </Switch>
+            </ BrowserRouter>
+        </div>
     );
 }
 
